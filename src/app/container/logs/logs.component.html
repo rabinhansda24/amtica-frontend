@@ -1,0 +1,20 @@
+<div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>User Id</th>
+          <th>Request IP</th>
+          <th>Logged in</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let log of logs">
+          <td>{{log.userid}}</td>
+          <td>{{log.reqip}}</td>
+          <td>{{log.created}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

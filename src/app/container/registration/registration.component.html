@@ -1,0 +1,25 @@
+<div class="user">
+  <header class="user__header">
+
+    <h1 class="user__title">Sign-up</h1>
+  </header>
+
+  <form [formGroup]="userForm" class="form" (ngSubmit)="registerUser()">
+    <div class="form__group">
+      <input type="text" placeholder="Name" formControlName="name" class="form__input" />
+    </div>
+
+    <div class="form__group">
+      <input type="email" formControlName="email" placeholder="Email" class="form__input" />
+    </div>
+
+    <div class="form__group">
+      <input type="password" formControlName="password" placeholder="Password" class="form__input" />
+    </div>
+
+    <button class="btn" type="submit">Register</button>
+  </form>
+  <div class="registration">
+    <a routerLink="/login" > Click here to login </a>
+  </div>
+</div>

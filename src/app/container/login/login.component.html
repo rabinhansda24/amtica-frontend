@@ -1,0 +1,21 @@
+<div class="user">
+  <header class="user__header">
+
+    <h1 class="user__title">Login</h1>
+  </header>
+
+  <form [formGroup]="loginForm" class="form" (ngSubmit)="login()">
+    <div class="form__group">
+      <input type="email" formControlName="email" placeholder="Email" class="form__input" />
+    </div>
+
+    <div class="form__group">
+      <input type="password" formControlName="password" placeholder="Password" class="form__input" />
+    </div>
+
+    <button class="btn" type="submit">Let me in</button>
+  </form>
+  <div class="registration">
+    <a routerLink="/registration" > Click here to register </a>
+  </div>
+</div>
