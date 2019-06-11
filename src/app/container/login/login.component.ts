@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
         this.dashboardService.setIsLogedIn(1);
         sessionStorage.setItem('token', data.token);
         this.toastr.success('Login success');
-        this.router.navigate(['/logs']);
+        this.router.navigate(['/file_upload']);
       }
 
     }, error => {
